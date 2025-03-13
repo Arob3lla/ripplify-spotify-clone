@@ -1,0 +1,128 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  appearance: none; /* Remove default styling */
+  flex-grow: 1;
+  height: 5px; /* Height of the track */
+  background: #555; /* Background of the track */
+  border-radius: 5px; /* Rounded edges */
+  outline: none;
+  cursor: pointer;
+  width: 30em;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none; /* Remove default styling */
+  width: 10px; /* Thumb size */
+  height: 10px;
+  border-radius: 50%; /* Make the thumb circular */
+  background: white; /* Thumb color */
+  cursor: pointer;
+  border: none;
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  border: none;
+}
+
+.slider::-ms-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  border: none;
+}
+
+.slider::-moz-range-track {
+  background: white; /* White track */
+  height: 5px;
+  border-radius: 5px; /* Rounded edges */
+}
+.volume {
+  appearance: none; /* Remove default styling */
+  flex-grow: 1;
+  height: 5px; /* Height of the track */
+  background: #555; /* Background of the track */
+  border-radius: 5px; /* Rounded edges */
+  outline: none;
+  cursor: pointer;
+  width: 5em;
+}
+
+.volume::-webkit-slider-thumb {
+  appearance: none; /* Remove default styling */
+  width: 10px; /* Thumb size */
+  height: 10px;
+  border-radius: 50%; /* Make the thumb circular */
+  background: white; /* Thumb color */
+  cursor: pointer;
+  border: none;
+}
+
+.volume::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  border: none;
+}
+
+.volume::-ms-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  border: none;
+}
+
+.volume::-moz-range-track {
+  background: white; /* White track */
+  height: 5px;
+  border-radius: 5px; /* Rounded edges */
+}
+
+/* Ensure the custom-scrollbar doesn't take extra space */
+.custom-scrollbar {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Show scrollbar on hover */
+.custom-scrollbar:hover {
+  overflow: auto;
+}
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Optional: horizontal scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.038); /* Background of the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4b5563; /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded edges */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #6b7280; /* Thumb color on hover */
+}
